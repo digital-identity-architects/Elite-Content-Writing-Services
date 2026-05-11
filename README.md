@@ -17,6 +17,18 @@ A premium, multi-page marketing site for a content writing studio that outperfor
 
 Shared `styles.css` and `script.js`. No build step, no dependencies.
 
+## Play Store / Android app
+
+This site is configured as an installable **Progressive Web App** and can be wrapped into a **Trusted Web Activity (TWA)** for Play Store. See [`TWA_BUILD.md`](./TWA_BUILD.md) for step-by-step build instructions.
+
+PWA pieces shipped:
+
+- `manifest.webmanifest` — web app manifest with icons, theme colors, and app shortcuts
+- `sw.js` — service worker (network-first HTML, cache-first assets, offline fallback)
+- `icons/` — 192/512 PNG, maskable 512 PNG, 2048 splash, SVG source
+- `.well-known/assetlinks.json` — Digital Asset Links file (fingerprint placeholder to fill after first Play Console upload)
+- `twa-manifest.json` — Bubblewrap config to generate the `.aab` artifact for Play Store
+
 ## Run locally
 
 Because pages link with absolute paths (`/about.html`, `/styles.css`), serve from the repo root rather than opening files directly:

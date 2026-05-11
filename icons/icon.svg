@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="40%" stop-color="#ff8e3c"/>
+      <stop offset="75%" stop-color="#ff6ec4"/>
+      <stop offset="100%" stop-color="#b388ff"/>
+    </linearGradient>
+    <linearGradient id="s" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#0a0a0f"/>
+  <rect width="512" height="512" rx="112" fill="url(#s)"/>
+  <g transform="translate(256 256)">
+    <circle r="170" fill="url(#g)"/>
+  </g>
+  <text x="256" y="328" text-anchor="middle"
+        font-family="Georgia, 'Iowan Old Style', 'Instrument Serif', serif"
+        font-style="italic" font-weight="400" font-size="240" fill="#0a0a0f"
+        letter-spacing="-6">E</text>
+</svg>

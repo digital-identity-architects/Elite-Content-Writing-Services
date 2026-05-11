@@ -4,6 +4,15 @@
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Register service worker (PWA + TWA prerequisite)
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {
+      /* swallow registration errors silently */
+    });
+  });
+}
+
 // Nav: scrolled state + mobile toggle
 const nav = document.querySelector(".nav");
 const toggle = document.querySelector(".nav-toggle");

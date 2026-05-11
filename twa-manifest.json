@@ -1,0 +1,54 @@
+{
+  "_comment_": "Bubblewrap input — REPLACE host + signing fingerprint before building.",
+  "packageId": "studio.elitecontent.app",
+  "host": "elitecontent.studio",
+  "name": "Elite Content Writing Services",
+  "launcherName": "Elite Content",
+  "display": "standalone",
+  "orientation": "default",
+  "themeColor": "#0a0a0f",
+  "navigationColor": "#0a0a0f",
+  "navigationColorDark": "#0a0a0f",
+  "navigationDividerColor": "#0a0a0f",
+  "navigationDividerColorDark": "#0a0a0f",
+  "backgroundColor": "#0a0a0f",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://elitecontent.studio/icons/icon-512.png",
+  "maskableIconUrl": "https://elitecontent.studio/icons/icon-maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "Book a diagnostic",
+      "shortName": "Book a call",
+      "url": "/contact.html",
+      "chosenIconUrl": "https://elitecontent.studio/icons/icon-192.png"
+    },
+    {
+      "name": "Read the blog",
+      "shortName": "Blog",
+      "url": "/blog.html",
+      "chosenIconUrl": "https://elitecontent.studio/icons/icon-192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://elitecontent.studio/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": { "enabled": false },
+    "playBilling": { "enabled": false }
+  },
+  "alphaDependencies": { "enabled": false },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://elitecontent.studio/",
+  "minSdkVersion": 21,
+  "orientationLock": false
+}
