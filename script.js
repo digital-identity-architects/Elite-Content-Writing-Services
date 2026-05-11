@@ -1,7 +1,8 @@
 // Small, dependency-free interactions for Elite Content.
 
 // Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Nav: scrolled state + mobile toggle
 const nav = document.querySelector(".nav");
@@ -41,10 +42,10 @@ const io = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-// Tilt-y parallax for the floating proof card on desktop only
-const proof = document.querySelector(".proof-card");
-if (proof && window.matchMedia("(pointer:fine)").matches) {
-  const hero = document.querySelector(".hero");
+// Tilt-y parallax for the floating proof card inside .hero on desktop only
+const proof = document.querySelector(".hero .proof-card");
+const hero = document.querySelector(".hero");
+if (proof && hero && window.matchMedia("(pointer:fine)").matches) {
   hero.addEventListener("mousemove", (e) => {
     const rect = hero.getBoundingClientRect();
     const dx = (e.clientX - rect.left) / rect.width - 0.5;

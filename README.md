@@ -1,38 +1,34 @@
 # Elite Content Writing Services
 
-A premium, single-page marketing site for a content writing studio that outperforms traditional agencies for roughly half the price.
+A premium, multi-page marketing site for a content writing studio that outperforms traditional agencies for roughly half the price.
 
-## What's inside
+## Pages
 
-- `index.html` — fully semantic single-page site
-- `styles.css` — design system, dark theme, gradient accents, responsive layout
-- `script.js` — nav state, scroll reveal, light parallax on the hero
+- `index.html` — home (hero, value pillars, services preview, vs-agency, work, process, pricing, testimonials, FAQ, CTA)
+- `about.html` — origin story, principles, team
+- `services.html` — full services, vs-agency table, process, pricing
+- `blog.html` — blog index with 6 cards (3 unique posts, 3 demo entries)
+  - `blog/half-the-price-twice-the-output.html`
+  - `blog/seo-content-that-ranks-in-2026.html`
+  - `blog/ghostwriting-founders-on-linkedin.html`
+- `contact.html` — long-form contact form, channels, FAQ
+- `terms.html` — Terms & Conditions
+- `privacy.html` — Privacy Policy
 
-No build step, no dependencies. Open `index.html` directly, or serve the folder:
+Shared `styles.css` and `script.js`. No build step, no dependencies.
+
+## Run locally
+
+Because pages link with absolute paths (`/about.html`, `/styles.css`), serve from the repo root rather than opening files directly:
 
 ```bash
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Sections
-
-1. Hero with floating social-proof card
-2. Trusted-by logo strip
-3. Value pillars (senior writers, ranking-grade SEO, editorial taste, half the invoice)
-4. Services grid (SEO, thought leadership, lifecycle, brand, reports, retainer)
-5. Vs.-agency comparison table
-6. Case studies with hard metrics
-7. Four-step process
-8. Three-tier pricing with agency price benchmarks
-9. Testimonials
-10. FAQ
-11. Contact CTA with inline form
-12. Footer
-
 ## Editing voice / pricing
 
-All copy lives in `index.html`. The pricing benchmark numbers (`$2,400`, `$6,800`, `$14,500` and the `<s>` strike-through agency comparisons) are illustrative — swap in your own before going live.
+All copy lives in the HTML files. The pricing benchmark numbers (`$2,400`, `$6,800`, `$14,500` and the `<s>` strike-through agency comparisons) and team bios are illustrative — swap in your own before going live. The contact form is currently UI-only (it shows a success state on submit); wire it to your inbox or a form service like Formspree before launching.
 
 ## Brand
 

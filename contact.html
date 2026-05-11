@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <title>Contact — Elite Content Writing Services</title>
+    <meta
+      name="description"
+      content="Book a 30-minute diagnostic call. We'll send a punch list and a fixed quote within 48 hours."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%92%EF%B8%8F%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="glow glow--a" aria-hidden="true"></div>
+    <div class="glow glow--b" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a href="/" class="brand" aria-label="Elite Content Writing home">
+        <span class="brand-mark">E</span>
+        <span class="brand-text">Elite<span class="brand-dot">.</span>Content</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="/contact.html" class="btn btn-primary">Book a call <span aria-hidden="true">→</span></a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <span class="kicker">Get in touch</span>
+        <h1>Tell us what you're trying to grow.</h1>
+        <p class="lede">
+          We'll reply within one business day with a 30-minute diagnostic slot. You'll leave the
+          call with a punch list and a fixed quote — whether you hire us or not.
+        </p>
+      </section>
+
+      <section class="value" style="padding-top: 0;">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h2>Three ways to reach a senior human.</h2>
+            <p>
+              No chat-bot, no contact form that emails an SDR. Every message in the channels below
+              is read by Elena (founding editor) or Marcus (strategy lead).
+            </p>
+            <ul class="contact-channels">
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:hello@elitecontent.studio">hello@elitecontent.studio</a>
+                <span style="color: var(--muted); font-size: 0.86rem;">Replies within one business day.</span>
+              </li>
+              <li>
+                <strong>Book a 30-min diagnostic</strong>
+                <a href="#form">Use the form →</a>
+                <span style="color: var(--muted); font-size: 0.86rem;">Calendly link sent on reply.</span>
+              </li>
+              <li>
+                <strong>For press &amp; partnerships</strong>
+                <a href="mailto:press@elitecontent.studio">press@elitecontent.studio</a>
+                <span style="color: var(--muted); font-size: 0.86rem;">Goes straight to founders.</span>
+              </li>
+              <li>
+                <strong>Office hours</strong>
+                <span style="color: var(--ink);">Mon–Fri · 9am–6pm ET / 9am–6pm CET</span>
+                <span style="color: var(--muted); font-size: 0.86rem;">Async-friendly outside those hours.</span>
+              </li>
+            </ul>
+          </div>
+
+          <form id="form" class="cta-form reveal" onsubmit="event.preventDefault(); this.classList.add('sent');">
+            <label>
+              <span>Your name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Alex Chen" />
+            </label>
+            <label>
+              <span>Work email</span>
+              <input
+                type="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="alex@company.com"
+              />
+            </label>
+            <label>
+              <span>Company</span>
+              <input type="text" name="company" autocomplete="organization" placeholder="Acme, Inc." />
+            </label>
+            <label>
+              <span>Company website</span>
+              <input type="url" name="website" placeholder="https://acme.com" />
+            </label>
+            <label>
+              <span>Approximate budget</span>
+              <select name="budget" style="width:100%; padding:12px 14px; background: rgba(255,255,255,0.04); border:1px solid var(--line); border-radius:var(--r-sm); color:var(--ink); font:inherit;">
+                <option>Under $2.5k / mo</option>
+                <option selected>$2.5k–$7k / mo</option>
+                <option>$7k–$15k / mo</option>
+                <option>$15k+ / mo</option>
+                <option>One-off project</option>
+              </select>
+            </label>
+            <label>
+              <span>What are you trying to grow?</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Organic traffic, founder LinkedIn, onboarding lifecycle…"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <span class="btn-default">Send it →</span>
+              <span class="btn-sent">Thanks — we'll be in touch within 24h ✓</span>
+            </button>
+            <p class="form-foot">No spam. No newsletter signup. Just a reply from a human.</p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Quick FAQ -->
+      <section id="faq" class="faq">
+        <div class="section-head">
+          <span class="kicker">Before you ask</span>
+          <h2>The questions everyone sends first.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>
+              <span>How fast can you start?</span>
+              <span class="chev" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Diagnostic call within 48 hours of your message. Kickoff inside a week. First drafts
+              in your hands within 10 business days of kickoff — often sooner.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>
+              <span>What's the minimum commitment?</span>
+              <span class="chev" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Month-to-month, always. Pause or cancel any month. We earn the next month with the
+              current one.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>
+              <span>Do you work with companies outside the US?</span>
+              <span class="chev" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Yes. We have writers in four timezones and most clients in North America and Europe,
+              plus a handful in APAC.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>
+              <span>What if I'm not sure what I need yet?</span>
+              <span class="chev" aria-hidden="true">+</span>
+            </summary>
+            <p>
+              That's the point of the diagnostic call. We'll tell you what we'd prioritize — and
+              what we'd leave alone — even if you don't hire us.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="brand-mark">E</span>
+          <span class="brand-text">Elite<span class="brand-dot">.</span>Content</span>
+          <p>
+            Senior-only writers. Editorial-grade content. SEO that actually ranks. Roughly half the
+            invoice.
+          </p>
+        </div>
+        <div class="foot-cols">
+          <div>
+            <h4>Studio</h4>
+            <a href="/about.html">About</a>
+            <a href="/services.html">Services</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <a href="/services.html#seo">SEO content</a>
+            <a href="/services.html#thought-leadership">Thought leadership</a>
+            <a href="/services.html#lifecycle">Lifecycle &amp; email</a>
+            <a href="/services.html#brand">Website &amp; brand copy</a>
+            <a href="/services.html#editorial">Reports &amp; whitepapers</a>
+          </div>
+          <div>
+            <h4>Legal &amp; reach</h4>
+            <a href="mailto:hello@elitecontent.studio">hello@elitecontent.studio</a>
+            <a href="/terms.html">Terms &amp; conditions</a>
+            <a href="/privacy.html">Privacy policy</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">X / Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <span>© <span id="year"></span> Elite Content Studio. All rights reserved.</span>
+        <span>Made by senior humans, in too many timezones.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
